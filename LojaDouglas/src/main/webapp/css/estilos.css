@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove margens externas padrão */
+    padding: 0; /* Remove espaçamento padrão */
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adicionado para tabelas */
+.cliente-tabela {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0; /* Espaçamento entre tabela e outros elementos */
+    font-size: 16px;
+    text-align: left;
+}
+
+.cliente-tabela th, .cliente-tabela td {
+    border: 1px solid #ddd; /* Bordas discretas */
+    padding: 8px; /* Substitui o atributo cellpadding */
+}
+
+.cliente-tabela th {
+    background-color: #f4f4f4; /* Cor de fundo do cabeçalho */
+    font-weight: bold;
+}
+
+.cliente-tabela tr:nth-child(even) {
+    background-color: #f9f9f9; /* Linhas alternadas */
+}
+
+.cliente-tabela tr:hover {
+    background-color: #f1f1f1; /* Destaque ao passar o mouse */
+}
+
+/* Adicionado para botões */
+.botao-editar, .botao-excluir, .botao-novo {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.botao-editar {
+    background-color: #4CAF50; /* Verde */
+}
+
+.botao-excluir {
+    background-color: #f44336; /* Vermelho */
+}
+
+.botao-novo {
+    background-color: #2196F3; /* Azul */
+}
+
+.botao-editar:hover, .botao-excluir:hover, .botao-novo:hover {
+    opacity: 0.8; /* Transparência ao passar o mouse */
+}
+
+/* Para evitar sobreposição com o footer */
+body {
+    padding-bottom: 50px; /* Dá espaço para o rodapé fixo */
+}
